@@ -1,0 +1,108 @@
+#intro {
+  background-image: url("./assets/intro-bg.jpg");
+  /* Set a specific height */
+  min-height: 550px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.who-we-are {
+  min-height: 700px;
+  background: rgba(0, 0, 0, 0.8);
+}
+.who-we-are .video-container {
+  position: relative;
+}
+.who-we-are .video-container video {
+  margin: auto;
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  z-index: 0;
+  opacity: 70%;
+  filter: brightness(60%);
+}
+.who-we-are .video-container .caption {
+  filter: brightness(100%);
+  text-align: start !important;
+  max-width: 50%;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding: 10px;
+}
+.who-we-are .video-container .caption h1 {
+  font-size: 4.5rem;
+  font-weight: lighter;
+  max-width: 75%;
+  color: #ffca1d;
+  border-bottom: 5px solid #ffca1d;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.who-we-are .video-container .caption h1 span {
+  font-weight: bold;
+  color: #fff;
+}
+.who-we-are .video-container .caption h1:after {
+  content: "";
+}
+.who-we-are .video-container .caption p {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.services {
+  background-image: url("./assets/service_bg.jpg");
+  /* Set a specific height */
+  min-height: 550px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.services .wrapper {
+  opacity: 100% !important;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.services .wrapper h1 {
+  font-weight: lighter;
+  font-size: 10rem;
+  text-transform: capitalize;
+}
+.services .wrapper h5 {
+  border-bottom: 3px solid #000;
+}
+.services .wrapper i {
+  font-size: 4rem;
+}
+.services .wrapper .strip {
+  width: 100%;
+  max-height: 250px;
+}
+
+.contact {
+  min-height: 75vh;
+}
+.contact .left {
+  background-color: #e5b756 !important;
+}
+.contact .right {
+  background-color: #000000 !important;
+  color: #fff;
+}
+.contact .right .icon-wrapper {
+  padding-bottom: 10rem;
+}
+.contact .right .icon-wrapper .icon {
+  font-size: 10rem;
+}
+.contact .right .text-wrapper {
+  text-align: center;
+  font-weight: bold;
+}
