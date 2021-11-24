@@ -2,6 +2,8 @@ $yellow_fade: #e5b756;
 $yellow: #ffca1d;
 $dark: #000000;
 $light: #fff;
+$accent: #101522;
+$accent_light: #222636;
 
 $video_height: 700px;
 
@@ -122,6 +124,29 @@ $video_height: 700px;
     .text-wrapper {
       text-align: center;
       font-weight: bold;
+    }
+  }
+}
+
+// Footer
+footer {
+  background-color: $accent;
+  color: $light;
+  padding: 15px 0;
+  a {
+    text-decoration: none;
+  }
+  .socials {
+    align-content: flex-end;
+    .social-circle {
+      font-size: 1.2rem;
+      display: inline-block;
+      border-radius: 50%;
+      background-color: $accent_light;
+      width: 35px;
+      height: 35px;
+      text-align: center;
+      //   display: none;
     }
   }
 }

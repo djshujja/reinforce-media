@@ -125,4 +125,29 @@
   text-align: center;
   font-weight: bold;
 }
+
+footer {
+  background-color: #101522;
+  color: #fff;
+  padding: 15px 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer .socials {
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+footer .socials .social-circle {
+  font-size: 1.2rem;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #222636;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
