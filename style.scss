@@ -7,6 +7,76 @@ $accent_light: #222636;
 
 $video_height: 700px;
 
+@font-face {
+  font-family: Decalotype;
+  src: url("./assets/fonts/decalotype/Decalotype-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Decalotype;
+  src: url("./assets/fonts/decalotype/Decalotype-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Visage;
+  src: url("./assets/fonts/Visage-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Signika;
+  src: url("./assets/fonts/SignikaNegative-Regular.ttf");
+}
+@font-face {
+  font-family: mutiara;
+  src: url("./assets/fonts/mutiara.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: quicksand;
+  src: url("./assets/fonts/quicksand.ttf");
+}
+@font-face {
+  font-family: Pasajero;
+  src: url("./assets/fonts/Pasajero.otf");
+}
+@font-face {
+  font-family: Niagara;
+  src: url("./assets/fonts/Niagara-Engraved.ttf");
+}
+
+@font-face {
+  font-family: Nexa;
+  src: url("./assets/fonts/Nexa-Light.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Masticusy;
+  src: url("./assets/fonts/Masticusy.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Uni;
+  src: url("./assets/fonts/Uni-Sans-Thin.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Uni;
+  src: url("./assets/fonts/Uni-Sans-Heavy.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Moon;
+  src: url("./assets/fonts/Moon-Light.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: TCCEB;
+  src: url("./assets/fonts/TCCEB.ttf");
+  font-weight: 700;
+}
+
 #intro {
   background-image: url("./assets/intro-bg.jpg");
   /* Set a specific height */
@@ -44,6 +114,7 @@ $video_height: 700px;
       text-align: center;
       padding: 10px;
       h1 {
+        font-family: "Uni";
         font-size: 4.5rem;
         font-weight: lighter;
         max-width: 75%;
@@ -62,7 +133,8 @@ $video_height: 700px;
       p {
         color: $light;
         font-weight: 500;
-        font-size: 1.1rem;
+        font-family: "Decalotype";
+        font-size: 1.4rem;
       }
     }
   }
@@ -109,6 +181,40 @@ $video_height: 700px;
 
   .left {
     background-color: $yellow_fade !important;
+
+    h2 {
+      font-weight: 500;
+      font-size: 4rem;
+      padding-bottom: 20px;
+      font-family: "quicksand";
+    }
+    p {
+      font-family: "quicksand";
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .contact-wrapper {
+      padding: 120px;
+
+      .form-card {
+        margin-top: 100px;
+      }
+      .contact-label {
+        text-align: center;
+        display: block;
+        margin: 10px;
+        color: $light;
+        background-color: $dark;
+        width: 80px;
+        padding: 8px;
+      }
+
+      input {
+        padding: 8px;
+        margin: 9px;
+        border-radius: 0px;
+      }
+    }
   }
   .right {
     background-color: $dark !important;
