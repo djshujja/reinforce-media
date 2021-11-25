@@ -182,6 +182,11 @@
   max-height: 250px;
 }
 
+.clients-wrapper h1 {
+  font-family: "Pasajero";
+  font-size: 5rem;
+}
+
 .contact {
   min-height: 75vh;
 }
