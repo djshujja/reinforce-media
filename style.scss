@@ -323,3 +323,7 @@ footer {
     }
   }
 }
+
+.owl-carousel .owl-stage {
+  transition-timing-function: linear !important;
+}

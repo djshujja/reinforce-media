@@ -336,4 +336,9 @@ footer .socials .social-circle {
   height: 35px;
   text-align: center;
 }
+
+.owl-carousel .owl-stage {
+  -webkit-transition-timing-function: linear !important;
+          transition-timing-function: linear !important;
+}
 /*# sourceMappingURL=style.css.map */

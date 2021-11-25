@@ -280,3 +280,7 @@ footer .socials .social-circle {
   height: 35px;
   text-align: center;
 }
+
+.owl-carousel .owl-stage {
+  transition-timing-function: linear !important;
+}
