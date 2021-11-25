@@ -154,6 +154,55 @@
   max-height: 250px;
 }
 
+.promises-wrapper .text-wrapper {
+  margin: auto;
+  max-width: 550px;
+  padding: 50px 0px;
+}
+.promises-wrapper .text-wrapper h2 {
+  font-family: "Quicksand" !important;
+  font-size: 3.5rem;
+}
+.promises-wrapper .cards {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 0px 150px;
+}
+.promises-wrapper .cards .icon {
+  color: #ffca1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: -30px;
+  left: 42%;
+  margin: auto;
+  font-size: 2.5rem;
+  border-radius: 10px;
+  background-color: #fff;
+  height: 60px;
+  width: 60px;
+  border: 1px solid #ccc;
+}
+.promises-wrapper .cards .promise-card {
+  position: relative;
+  background-color: #fafafa;
+  padding: 50px 25px;
+  border: 1px solid transparent;
+  transition: all linear 150ms;
+}
+.promises-wrapper .cards .promise-card h3 {
+  font-family: "Decalotype";
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.promises-wrapper .cards .promise-card:hover,
+.promises-wrapper .cards .icon:hover {
+  cursor: pointer;
+  border: 1px solid #ffca1d;
+}
+
 .clients-wrapper h1 {
   font-family: "Pasajero";
   font-size: 5rem;
