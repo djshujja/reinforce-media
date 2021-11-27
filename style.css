@@ -1,3 +1,11 @@
+.color_primary {
+  color: #f9dfdc !important;
+}
+
+.color_secondary {
+  color: #f9dfdc !important;
+}
+
 @font-face {
   font-family: Decalotype;
   src: url("./assets/fonts/decalotype/Decalotype-Regular.ttf");
@@ -79,14 +87,46 @@
 }
 
 #intro {
-  background-image: url("./assets/intro-bg.jpg");
-  /* Set a specific height */
-  min-height: 550px;
-  /* Create the parallax scrolling effect */
+  background-image: url("./assets/intro-bg-2.jpg");
+  min-height: 450px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 90%;
+}
+
+#intro h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Uni";
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 100;
+  padding-top: 100px;
+}
+
+#intro .media-color {
+  color: #f9dfdc !important;
+}
+
+#intro .ml7 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.7em;
+}
+
+#intro .ml7 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+#intro .ml7 .letter {
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  display: inline-block;
+  line-height: 1em;
 }
 
 .who-we-are {
@@ -125,8 +165,8 @@
   font-size: 4.5rem;
   font-weight: lighter;
   max-width: 75%;
-  color: #ffca1d;
-  border-bottom: 5px solid #ffca1d;
+  color: #f9dfdc;
+  border-bottom: 5px solid #f9dfdc;
   display: inline-block;
   padding-bottom: 10px;
 }
@@ -148,6 +188,7 @@
 }
 
 .services {
+  display: none;
   background-image: url("./assets/service_bg.jpg");
   /* Set a specific height */
   min-height: 550px;
@@ -200,7 +241,7 @@
 }
 
 .promises-wrapper .cards .icon {
-  color: #ffca1d;
+  color: #0a81ab;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -241,7 +282,25 @@
 .promises-wrapper .cards .promise-card:hover,
 .promises-wrapper .cards .icon:hover {
   cursor: pointer;
-  border: 1px solid #ffca1d;
+  border: 1px solid #0a81ab;
+}
+
+.facebook-wrapper {
+  max-width: 80%;
+}
+
+.facebook-wrapper img {
+  border-radius: 10px;
+}
+
+.facebook-wrapper .facebook-intro {
+  font-family: "Quicksand";
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.facebook-wrapper .facebook-lead {
+  font-size: 1.5rem;
 }
 
 .clients-wrapper h1 {
@@ -254,7 +313,7 @@
 }
 
 .contact .left {
-  background-color: #e5b756 !important;
+  background-color: #f9dfdc !important;
 }
 
 .contact .left h2 {
@@ -340,5 +399,32 @@ footer .socials .social-circle {
 .owl-carousel .owl-stage {
   -webkit-transition-timing-function: linear !important;
           transition-timing-function: linear !important;
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #1c2331 !important;
+  }
+}
+
+.view,
+body,
+html {
+  height: 100%;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.page-footer,
+.top-nav-collapse {
+  background-color: #1c2331;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1c2331;
+  }
 }
 /*# sourceMappingURL=style.css.map */

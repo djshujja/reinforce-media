@@ -1,5 +1,9 @@
 $yellow_fade: #e5b756;
 $yellow: #ffca1d;
+$blue: #0c4271;
+$secondary_2: #f9dfdc;
+$secondary: #0a81ab;
+$primray: $secondary_2;
 $dark: #000000;
 $light: #fff;
 $accent: #101522;
@@ -7,6 +11,15 @@ $accent_light: #222636;
 $off_white: #fafafa;
 
 $video_height: 700px;
+
+// utils
+.color_primary {
+  color: $primray !important;
+}
+
+.color_secondary {
+  color: $secondary_2 !important;
+}
 
 @font-face {
   font-family: Decalotype;
@@ -79,19 +92,62 @@ $video_height: 700px;
 }
 
 #intro {
-  background-image: url("./assets/intro-bg.jpg");
-  /* Set a specific height */
-  min-height: 550px;
+  // Millionares
+  // background-image: url("./assets/intro-bg.jpg");
 
-  /* Create the parallax scrolling effect */
+  // Dark laptop
+  background-image: url("./assets/intro-bg-2.jpg");
+
+  // 85.00%
+  // background-image: url("./assets/intro-bg-3.jpg");
+
+  // keyboard
+  // background-image: url("./assets/intro-bg-4.jpg");
+  min-height: 450px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 90%;
+  // filter: blur(3px);
+
+  h1 {
+    color: $light;
+    text-align: center;
+    font-family: "Uni";
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 100;
+    padding-top: 100px;
+  }
+  .media-color {
+    color: $primray !important;
+  }
+
+  // Animation
+  .ml7 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.7em;
+  }
+  .ml7 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    // padding-top: 0.2em;
+    // padding-right: 0.05em;
+    // padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  .ml7 .letter {
+    transform-origin: 0 100%;
+    display: inline-block;
+    line-height: 1em;
+  }
 }
 
 // Who We Are
 .who-we-are {
+  // display: none; // NONONO
   min-height: $video_height;
   background: rgba(0, 0, 0, 0.8);
   .video-container {
@@ -119,8 +175,8 @@ $video_height: 700px;
         font-size: 4.5rem;
         font-weight: lighter;
         max-width: 75%;
-        color: $yellow;
-        border-bottom: 5px solid $yellow;
+        color: $primray;
+        border-bottom: 5px solid $primray;
         display: inline-block;
         padding-bottom: 10px;
         span {
@@ -142,6 +198,7 @@ $video_height: 700px;
 }
 
 .services {
+  display: none;
   background-image: url("./assets/service_bg.jpg");
   /* Set a specific height */
   min-height: 550px;
@@ -196,7 +253,7 @@ $video_height: 700px;
     margin: 10px 0px;
     padding: 0px 150px;
     .icon {
-      color: $yellow;
+      color: $secondary;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -229,8 +286,26 @@ $video_height: 700px;
     .promise-card:hover,
     .icon:hover {
       cursor: pointer;
-      border: 1px solid $yellow;
+      border: 1px solid $secondary;
     }
+  }
+}
+
+.facebook-wrapper {
+  max-width: 80%;
+
+  img {
+    border-radius: 10px;
+  }
+
+  .facebook-intro {
+    font-family: "Quicksand";
+    font-weight: bold;
+    font-size: 3rem;
+  }
+
+  .facebook-lead {
+    font-size: 1.5rem;
   }
 }
 
@@ -247,7 +322,7 @@ $video_height: 700px;
   min-height: 75vh;
 
   .left {
-    background-color: $yellow_fade !important;
+    background-color: $secondary_2 !important;
 
     h2 {
       font-weight: 500;
@@ -326,4 +401,27 @@ footer {
 
 .owl-carousel .owl-stage {
   transition-timing-function: linear !important;
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #1c2331 !important;
+  }
+}
+.view,
+body,
+html {
+  height: 100%;
+}
+.navbar {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.page-footer,
+.top-nav-collapse {
+  background-color: #1c2331;
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1c2331;
+  }
 }
