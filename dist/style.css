@@ -289,12 +289,13 @@
   border: 1px solid #2d3e4f;
 }
 
-#unknown-section {
-  width: 100%;
-  height: 100px;
+.unknown-section-inner {
+  background-color: #cf404d;
+  margin: 0px 50px;
+  padding: 0px 100px;
 }
-#unknown-section h2,
-#unknown-section a {
+.unknown-section-inner h2,
+.unknown-section-inner a {
   font-family: "Uni";
   font-weight: 500;
   color: #fff;

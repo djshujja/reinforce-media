@@ -341,9 +341,11 @@ $video_height: 700px;
   }
 }
 
-#unknown-section {
-  width: 100%;
-  height: 100px;
+.unknown-section-inner {
+  // width: 100%;
+  background-color: $primary;
+  margin: 0px 50px;
+  padding: 0px 100px;
   h2,
   a {
     font-family: "Uni";
