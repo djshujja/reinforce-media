@@ -1,9 +1,11 @@
 $yellow_fade: #e5b756;
 $yellow: #ffca1d;
+$reddish: #cf404d;
+$slate_gray: #2d3e4f;
 $blue: #0c4271;
 $secondary_2: #f9dfdc;
-$secondary: #0a81ab;
-$primray: $secondary_2;
+$secondary: $slate_gray;
+$primary: $reddish;
 $dark: #000000;
 $light: #fff;
 $accent: #101522;
@@ -14,7 +16,15 @@ $video_height: 700px;
 
 // utils
 .color_primary {
-  color: $primray !important;
+  color: $primary !important;
+}
+
+.bg_primary {
+  background-color: $primary !important;
+}
+
+.bg_secondary {
+  background-color: $secondary !important;
 }
 
 .color_secondary {
@@ -91,28 +101,68 @@ $video_height: 700px;
   font-weight: 700;
 }
 
+/* The sidebar menu */
+.sidenav {
+  z-index: 1;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 17%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: $secondary; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+
+  .sidenav-inner {
+    // display: none;
+    font-family: "Uni";
+    margin-top: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    .brand {
+      font-size: 1.7rem;
+      font-family: "Uni";
+      font-weight: 600;
+    }
+    a {
+      color: $light !important;
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      display: block;
+      transition: all ease-in-out 200ms;
+    }
+
+    .selected,
+    a:hover {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: $primary !important;
+    }
+  }
+}
+
 #intro {
   // Millionares
   // background-image: url("./assets/intro-bg.jpg");
 
   // Dark laptop
-  background-image: url("./assets/intro-bg-2.jpg");
+  background-image: url("./assets/intro-bg.jpg");
 
   // 85.00%
   // background-image: url("./assets/intro-bg-3.jpg");
 
   // keyboard
   // background-image: url("./assets/intro-bg-4.jpg");
-  min-height: 450px;
+  min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 90%;
   // filter: blur(3px);
 
   h1 {
-    color: $light;
+    color: $dark;
     text-align: center;
     font-family: "Uni";
     letter-spacing: 0.2em;
@@ -121,7 +171,7 @@ $video_height: 700px;
     padding-top: 100px;
   }
   .media-color {
-    color: $primray !important;
+    color: $primary !important;
   }
 
   // Animation
@@ -148,7 +198,7 @@ $video_height: 700px;
 // Who We Are
 .who-we-are {
   // display: none; // NONONO
-  min-height: $video_height;
+  // min-height: $video_height;
   background: rgba(0, 0, 0, 0.8);
   .video-container {
     position: relative;
@@ -165,7 +215,7 @@ $video_height: 700px;
     .caption {
       filter: brightness(100%);
       text-align: start !important;
-      max-width: 50%;
+      max-width: 75%;
       z-index: 1;
       position: relative;
       text-align: center;
@@ -175,8 +225,8 @@ $video_height: 700px;
         font-size: 4.5rem;
         font-weight: lighter;
         max-width: 75%;
-        color: $primray;
-        border-bottom: 5px solid $primray;
+        color: $light;
+        border-bottom: 5px solid $primary;
         display: inline-block;
         padding-bottom: 10px;
         span {
@@ -253,7 +303,7 @@ $video_height: 700px;
     margin: 10px 0px;
     padding: 0px 150px;
     .icon {
-      color: $secondary;
+      color: $primary;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -291,6 +341,18 @@ $video_height: 700px;
   }
 }
 
+#unknown-section {
+  width: 100%;
+  height: 100px;
+  h2,
+  a {
+    font-family: "Uni";
+    font-weight: 500;
+    color: $light;
+    margin: 25px 0px;
+  }
+}
+
 .facebook-wrapper {
   max-width: 80%;
 
@@ -309,6 +371,49 @@ $video_height: 700px;
   }
 }
 
+.milestones-inner {
+  cursor: pointer;
+  font-family: "Quicksand";
+  font-family: "Uni";
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 100px 0px;
+  background-color: $accent;
+  width: 100%;
+  div {
+    // font-family: "Quicksand";
+    // font-weight: bold;
+    font-family: "Uni";
+  }
+  .milestone-card {
+    border-radius: 4px;
+    text-align: center;
+    color: $accent;
+    background-color: $light;
+    margin-right: 5px;
+    padding: 30px;
+    border: 1px solid transparent;
+    transition: all 250ms ease-in-out;
+  }
+  .milestone-card:nth-child(2) {
+    border: 1px solid $light;
+    background-color: $primary;
+    color: $light;
+  }
+
+  .milestone-card:nth-child(2):hover {
+    border: 1px solid transparent;
+    color: $accent;
+    background-color: $light;
+  }
+
+  .milestone-card:hover {
+    border: 1px solid $light;
+    background-color: $primary;
+    color: $light;
+  }
+}
+
 // clients
 .clients-wrapper {
   h1 {
@@ -317,13 +422,16 @@ $video_height: 700px;
   }
 }
 
+.btn-outline-light:hover {
+  color: $dark !important;
+}
 // Contact
 .contact {
   min-height: 75vh;
 
   .left {
-    background-color: $secondary_2 !important;
-
+    background-color: $primary !important;
+    color: $light;
     h2 {
       font-weight: 500;
       font-size: 4rem;
@@ -333,10 +441,10 @@ $video_height: 700px;
     p {
       font-family: "quicksand";
       font-size: 1.2rem;
-      font-weight: bold;
+      // font-weight: bold;
     }
     .contact-wrapper {
-      padding: 120px;
+      padding: 50px;
 
       .form-card {
         margin-top: 100px;
@@ -378,6 +486,7 @@ $video_height: 700px;
 
 // Footer
 footer {
+  z-index: 200;
   background-color: $accent;
   color: $light;
   padding: 15px 0;
