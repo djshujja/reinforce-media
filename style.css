@@ -117,15 +117,21 @@
 
 .sidenav .sidenav-inner {
   font-family: "Uni";
+  padding: 0px 25px;
   margin-top: 50%;
   text-align: center;
   font-size: 1.5rem;
 }
 
 .sidenav .sidenav-inner .brand {
-  font-size: 1.7rem;
-  font-family: "Uni";
+  letter-spacing: 0.3em;
+  font-size: 1.6rem;
+  font-family: "Visage";
   font-weight: 600;
+}
+
+.sidenav .sidenav-inner .brand span {
+  color: #cf404d !important;
 }
 
 .sidenav .sidenav-inner a {
@@ -144,6 +150,10 @@
   color: #cf404d !important;
 }
 
+.sidenav .sidenav-inner .brand:hover span {
+  color: #fff !important;
+}
+
 #intro {
   background-image: url("./assets/intro-bg.jpg");
   min-height: 100vh;
@@ -153,37 +163,55 @@
   background-size: cover;
 }
 
-#intro h1 {
-  color: #000000;
+#intro .intro-wrapper {
+  opacity: 100% !important;
+  background-color: rgba(0, 0, 0, 0.8);
+  min-height: 100vh;
+}
+
+#intro .logo-wrapper {
+  padding: 20rem 0px;
+}
+
+#intro h1,
+#intro h2 {
+  color: #fff;
   text-align: center;
-  font-family: "Uni";
+  font-weight: bold;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  font-weight: 100;
-  padding-top: 100px;
+  font-family: "Visage" !important;
 }
 
-#intro .media-color {
-  color: #cf404d !important;
-}
-
-#intro .ml7 {
+#intro .ml2,
+#intro .ml3 {
   position: relative;
   font-weight: 900;
-  font-size: 3.7em;
+  font-size: 5em;
+  letter-spacing: 0.5em;
 }
 
-#intro .ml7 .text-wrapper {
+#intro .ml2 .text-wrapper,
+#intro .ml3 .text-wrapper {
   position: relative;
   display: inline-block;
   overflow: hidden;
 }
 
-#intro .ml7 .letter {
+#intro .ml2 .letter,
+#intro .ml3 .letter {
   -webkit-transform-origin: 0 100%;
           transform-origin: 0 100%;
   display: inline-block;
   line-height: 1em;
+}
+
+#intro .ml3 {
+  color: #cf404d !important;
+  font-family: "quicksand" !important;
+  font-weight: 100 !important;
+  letter-spacing: 0.2em;
+  font-size: 4rem;
 }
 
 .who-we-are {
@@ -286,7 +314,7 @@
 }
 
 .promises-wrapper .text-wrapper h2 {
-  font-family: "Quicksand" !important;
+  font-family: "quicksand" !important;
   font-size: 3.5rem;
 }
 
@@ -364,7 +392,7 @@
 }
 
 .facebook-wrapper .facebook-intro {
-  font-family: "Quicksand";
+  font-family: "quicksand";
   font-weight: bold;
   font-size: 3rem;
 }
@@ -375,7 +403,7 @@
 
 .milestones-inner {
   cursor: pointer;
-  font-family: "Quicksand";
+  font-family: "quicksand";
   font-family: "Uni";
   font-weight: bold;
   font-size: 1.5rem;
@@ -423,12 +451,85 @@
   font-size: 5rem;
 }
 
+.clients-wrapper .owl-carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.clients-wrapper .client-card {
+  padding: 10px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.clients-wrapper .client-card:hover {
+  cursor: pointer;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+#team-gallery h1 {
+  font-family: "Pasajero";
+  font-size: 5rem;
+}
+
+#team-gallery .owl-stage-outer {
+  padding: 50px 0px !important;
+}
+
+#team-gallery .team-card {
+  padding: 50px;
+  width: 500px;
+  padding: 10px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  border-radius: 50%;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#team-gallery .team-card .img-wrapper img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+  width: 50%;
+}
+
+#team-gallery .team-card .text-wrapper h3 {
+  font-family: "quicksand";
+  font-size: 2rem;
+}
+
+#team-gallery .team-card .text-wrapper p {
+  font-weight: bold;
+}
+
+#team-gallery .team-card:hover {
+  cursor: pointer;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
 .btn-outline-light:hover {
   color: #000000 !important;
 }
 
 .contact {
   min-height: 75vh;
+  background-color: #000000;
 }
 
 .contact .left {
@@ -475,19 +576,22 @@
 .contact .right {
   background-color: #000000 !important;
   color: #fff;
-}
-
-.contact .right .icon-wrapper {
-  padding-bottom: 10rem;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contact .right .icon-wrapper .icon {
-  font-size: 10rem;
+  font-size: 11rem;
 }
 
 .contact .right .text-wrapper {
+  padding: 50px 50px;
   text-align: center;
-  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
 }
 
 footer {

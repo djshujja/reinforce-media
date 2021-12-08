@@ -117,13 +117,18 @@ $video_height: 700px;
   .sidenav-inner {
     // display: none;
     font-family: "Uni";
+    padding: 0px 25px;
     margin-top: 50%;
     text-align: center;
     font-size: 1.5rem;
     .brand {
-      font-size: 1.7rem;
-      font-family: "Uni";
+      letter-spacing: 0.3em;
+      font-size: 1.6rem;
+      font-family: "Visage";
       font-weight: 600;
+      span {
+        color: $primary !important;
+      }
     }
     a {
       color: $light !important;
@@ -138,6 +143,11 @@ $video_height: 700px;
       font-size: 1.3rem;
       font-weight: 600;
       color: $primary !important;
+    }
+    .brand:hover {
+      span {
+        color: $light !important;
+      }
     }
   }
 }
@@ -161,26 +171,34 @@ $video_height: 700px;
   background-size: cover;
   // filter: blur(3px);
 
-  h1 {
-    color: $dark;
+  .intro-wrapper {
+    opacity: 100% !important;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-height: 100vh;
+  }
+  .logo-wrapper {
+    padding: 20rem 0px;
+  }
+  h1,
+  h2 {
+    color: $light;
     text-align: center;
-    font-family: "Uni";
+    font-weight: bold;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    font-weight: 100;
-    padding-top: 100px;
+    // font-family: "Uni" !important;
+    font-family: "Visage" !important;
   }
-  .media-color {
-    color: $primary !important;
-  }
-
   // Animation
-  .ml7 {
+  .ml2,
+  .ml3 {
     position: relative;
     font-weight: 900;
-    font-size: 3.7em;
+    font-size: 5em;
+    letter-spacing: 0.5em;
   }
-  .ml7 .text-wrapper {
+  .ml2 .text-wrapper,
+  .ml3 .text-wrapper {
     position: relative;
     display: inline-block;
     // padding-top: 0.2em;
@@ -188,10 +206,19 @@ $video_height: 700px;
     // padding-bottom: 0.1em;
     overflow: hidden;
   }
-  .ml7 .letter {
+  .ml2 .letter,
+  .ml3 .letter {
     transform-origin: 0 100%;
     display: inline-block;
     line-height: 1em;
+  }
+
+  .ml3 {
+    color: $primary !important;
+    font-family: "quicksand" !important;
+    font-weight: 100 !important;
+    letter-spacing: 0.2em;
+    font-size: 4rem;
   }
 }
 
@@ -288,7 +315,7 @@ $video_height: 700px;
 .promises-wrapper {
   .text-wrapper {
     h2 {
-      font-family: "Quicksand" !important;
+      font-family: "quicksand" !important;
       // text-transform: uppercase;
       font-size: 3.5rem;
       // font-weight: 700;
@@ -363,7 +390,7 @@ $video_height: 700px;
   }
 
   .facebook-intro {
-    font-family: "Quicksand";
+    font-family: "quicksand";
     font-weight: bold;
     font-size: 3rem;
   }
@@ -375,7 +402,7 @@ $video_height: 700px;
 
 .milestones-inner {
   cursor: pointer;
-  font-family: "Quicksand";
+  font-family: "quicksand";
   font-family: "Uni";
   font-weight: bold;
   font-size: 1.5rem;
@@ -383,7 +410,7 @@ $video_height: 700px;
   background-color: $accent;
   width: 100%;
   div {
-    // font-family: "Quicksand";
+    // font-family: "quicksand";
     // font-weight: bold;
     font-family: "Uni";
   }
@@ -422,6 +449,63 @@ $video_height: 700px;
     font-family: "Pasajero";
     font-size: 5rem;
   }
+  .owl-carousel {
+    display: flex;
+    justify-content: space-around;
+  }
+  .client-card {
+    padding: 10px;
+    transition: all 1s ease-in-out;
+  }
+  .client-card:hover {
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    transform: scale(1.2, 1.2);
+  }
+}
+
+// clients
+#team-gallery {
+  h1 {
+    font-family: "Pasajero";
+    font-size: 5rem;
+  }
+  .owl-stage-outer {
+    padding: 50px 0px !important;
+  }
+  .team-card {
+    // display: none;
+    padding: 50px;
+    width: 500px;
+    padding: 10px;
+    transition: all 1s ease-in-out;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    .img-wrapper img {
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      margin: auto;
+      display: block;
+      width: 50%;
+    }
+    .text-wrapper {
+      h3 {
+        font-family: "quicksand";
+        font-size: 2rem;
+      }
+      p {
+        font-weight: bold;
+      }
+    }
+  }
+  .team-card:hover {
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    transform: scale(1.2, 1.2);
+  }
 }
 
 .btn-outline-light:hover {
@@ -430,7 +514,7 @@ $video_height: 700px;
 // Contact
 .contact {
   min-height: 75vh;
-
+  background-color: $dark;
   .left {
     background-color: $primary !important;
     color: $light;
@@ -471,17 +555,21 @@ $video_height: 700px;
   .right {
     background-color: $dark !important;
     color: $light;
-
+    display: grid;
+    justify-content: space-between;
     .icon-wrapper {
-      padding-bottom: 10rem;
+      // padding-bottom: 19rem;
       .icon {
-        font-size: 10rem;
+        font-size: 11rem;
       }
     }
 
     .text-wrapper {
+      padding: 50px 50px;
       text-align: center;
-      font-weight: bold;
+      // font-weight: bold;
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
     }
   }
 }
