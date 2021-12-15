@@ -376,7 +376,7 @@
 
 .unknown-section-inner h2,
 .unknown-section-inner a {
-  font-family: "Uni";
+  font-family: "Pasajero";
   font-weight: 500;
   color: #fff;
   margin: 25px 0px;
@@ -447,7 +447,7 @@
 
 .clients-wrapper h1 {
   font-family: "Pasajero";
-  font-size: 5rem;
+  font-size: 2rem;
 }
 
 .clients-wrapper .owl-carousel {
@@ -456,6 +456,10 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.clients-wrapper .owl-carousel img {
+  width: 75%;
 }
 
 .clients-wrapper .client-card {
@@ -497,22 +501,22 @@
 }
 
 #team-gallery .team-card .img-wrapper img {
-  height: 250px;
-  width: 250px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
   margin: auto;
   display: block;
-  width: 50%;
 }
 
 #team-gallery .team-card .text-wrapper h3 {
   font-family: "quicksand";
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
 #team-gallery .team-card .text-wrapper p {
   font-weight: bold;
   text-transform: lowercase;
+  font-size: 1rem;
 }
 
 #team-gallery .team-card:hover {
