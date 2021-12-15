@@ -483,6 +483,7 @@ $video_height: 700px;
     text-align: center;
     align-content: center;
     justify-content: center;
+
     .img-wrapper img {
       height: 250px;
       width: 250px;
@@ -498,6 +499,7 @@ $video_height: 700px;
       }
       p {
         font-weight: bold;
+        text-transform: lowercase;
       }
     }
   }
