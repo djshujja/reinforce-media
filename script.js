@@ -121,3 +121,124 @@ anime
     easing: "easeOutExpo",
     delay: 1000,
   });
+
+const clients = [
+  {
+    name: "Mike Tyson",
+    image: "mike-tyson",
+  },
+  {
+    name: "D' Lai",
+    image: "d-lai",
+  },
+  {
+    name: "Fani Stipkovic",
+    image: "fani-stipkovic",
+  },
+  {
+    name: "Metisha Schaefer",
+    image: "metisha-schaefer",
+  },
+  {
+    name: "Brandon Hendrickson",
+    image: "brandon-hendrickson",
+  },
+  {
+    name: "Floyd Mayweather",
+    image: "floyd-mayweather",
+  },
+  {
+    name: "Jeanlyn Campos",
+    image: "jeanlyn-campos",
+  },
+  {
+    name: "Angie Arizaga",
+    image: "angie-arizaga",
+  },
+  {
+    name: "Henny Seroeyen",
+    image: "henny-seroeyen",
+  },
+  {
+    name: "Teer Wayde",
+    image: "teer-wayde",
+  },
+  {
+    name: "Jake Quickenden",
+    image: "jake-quickenden",
+  },
+  {
+    name: "Addis Pablo",
+    image: "addis-pablo",
+  },
+  {
+    name: "Basketmouth",
+    image: "basketmouth",
+  },
+  {
+    name: "Bboy Marcio",
+    image: "bboy-marcio",
+  },
+  {
+    name: "Little Shao",
+    image: "little-shao",
+  },
+  {
+    name: "Carly Lauren",
+    image: "carly-lauren",
+  },
+  {
+    name: "Sophia Grace",
+    image: "sophia-grace",
+  },
+  {
+    name: "Naima Kira",
+    image: "naima-kira",
+  },
+  {
+    name: "Vicki Li",
+    image: "vicki-li",
+  },
+  {
+    name: "Irina Voronina",
+    image: "irina-voronina",
+  },
+  {
+    name: "Raquel Pomplun",
+    image: "raquel-pomplun",
+  },
+  {
+    name: "King Vader",
+    image: "king-vader",
+  },
+  {
+    name: "Beth Hagendorf",
+    image: "beth-hagendorf",
+  },
+  {
+    name: "Vicky-lee Valentino",
+    image: "vicky-lee-valentino",
+  },
+  {
+    name: "Shelby Chesnes",
+    image: "shelby-chesnes",
+  },
+];
+
+const partnersGrid = document.getElementById("partners-grid");
+
+clients.forEach((client) => {
+  const defaultImage =
+    "https://i.pinimg.com/474x/1a/d5/65/1ad56502f8d3fadb2f24350700f0dcab.jpg";
+  content = `
+  <div class="partner">
+                  <img
+                    src="./assets/clients/${client.image}.jpg"
+                    alt="${client.image}"
+                    class="d-block m-auto"
+                  />
+                  <h4>${client.name}</h4>
+                </div>
+                `;
+  partnersGrid.innerHTML += content;
+});

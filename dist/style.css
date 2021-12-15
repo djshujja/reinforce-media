@@ -452,8 +452,10 @@
 .partners .parnters-grid {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .partners .parnters-grid .partner {
+  flex: 1 0 33%;
   width: 250px;
   height: 200px;
   margin: auto;
@@ -463,6 +465,7 @@
 .partners .parnters-grid .partner img {
   margin: 10px auto !important;
   border-radius: 5px;
+  object-fit: cover;
   width: 150px;
   height: 150px;
 }

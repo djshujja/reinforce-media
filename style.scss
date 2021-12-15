@@ -524,14 +524,16 @@ $video_height: 700px;
   .parnters-grid {
     display: flex;
     justify-content: space-around;
-
+    flex-wrap: wrap;
     .partner {
+      flex: 1 0 33%;
       width: 250px;
       height: 200px;
       margin: auto;
       img {
         margin: 10px auto !important;
         border-radius: 5px;
+        object-fit: cover;
         width: 150px;
         height: 150px;
       }
