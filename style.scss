@@ -372,6 +372,7 @@ $video_height: 700px;
       padding: 50px 25px;
       border: 1px solid transparent;
       transition: all linear 150ms;
+      min-height: 500px;
     }
     .promise-card:hover,
     .icon:hover {
@@ -544,13 +545,13 @@ $video_height: 700px;
     justify-content: space-around;
     flex-wrap: wrap;
     .partner {
-      flex: 1 0 33%;
+      flex: 1 0 21%;
       width: 250px;
       height: 200px;
       margin: auto;
       img {
         margin: 10px auto !important;
-        border-radius: 5px;
+        border-radius: 50%;
         object-fit: cover;
         width: 150px;
         height: 150px;
@@ -690,4 +691,8 @@ html {
   .navbar {
     background-color: #1c2331;
   }
+}
+
+#team-gallery {
+  display: none !important;
 }

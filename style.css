@@ -366,6 +366,7 @@
   border: 1px solid transparent;
   -webkit-transition: all linear 150ms;
   transition: all linear 150ms;
+  min-height: 500px;
 }
 
 .promises-wrapper .cards .promise-card h3 {
@@ -564,8 +565,8 @@
 
 .partners .parnters-grid .partner {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 33%;
-          flex: 1 0 33%;
+      -ms-flex: 1 0 21%;
+          flex: 1 0 21%;
   width: 250px;
   height: 200px;
   margin: auto;
@@ -575,7 +576,7 @@
 
 .partners .parnters-grid .partner img {
   margin: 10px auto !important;
-  border-radius: 5px;
+  border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
   width: 150px;
@@ -725,5 +726,9 @@ html {
   .navbar {
     background-color: #1c2331;
   }
+}
+
+#team-gallery {
+  display: none !important;
 }
 /*# sourceMappingURL=style.css.map */

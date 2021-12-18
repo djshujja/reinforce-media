@@ -154,10 +154,11 @@ var clients = [{
 }, {
   name: "Bboy Marcio",
   image: "bboy-marcio"
-}, {
-  name: "Little Shao",
-  image: "little-shao"
-}, {
+}, // {
+//   name: "Little Shao",
+//   image: "little-shao",
+// },
+{
   name: "Carly Lauren",
   image: "carly-lauren"
 }, {
@@ -191,6 +192,6 @@ var clients = [{
 var partnersGrid = document.getElementById("partners-grid");
 clients.forEach(function (client) {
   var defaultImage = "https://i.pinimg.com/474x/1a/d5/65/1ad56502f8d3fadb2f24350700f0dcab.jpg";
-  content = "\n  <div class=\"partner\">\n                  <img\n                    src=\"./assets/clients/".concat(client.image, ".jpg\"\n                    alt=\"").concat(client.image, "\"\n                    class=\"d-block m-auto\"\n                  />\n                  <h4>").concat(client.name, "</h4>\n                </div>\n                ");
+  content = "\n  <div class=\"partner\">\n                  <img\n                    src=\"./assets/clients/".concat(client.image, ".jpg\"\n                    alt=\"").concat(client.image, "\"\n                    class=\"d-block m-auto client-image\"\n                  />\n                  <h4>").concat(client.name, "</h4>\n                </div>\n                ");
   partnersGrid.innerHTML += content;
 });

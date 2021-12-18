@@ -179,10 +179,10 @@ const clients = [
     name: "Bboy Marcio",
     image: "bboy-marcio",
   },
-  {
-    name: "Little Shao",
-    image: "little-shao",
-  },
+  // {
+  //   name: "Little Shao",
+  //   image: "little-shao",
+  // },
   {
     name: "Carly Lauren",
     image: "carly-lauren",
@@ -235,7 +235,7 @@ clients.forEach((client) => {
                   <img
                     src="./assets/clients/${client.image}.jpg"
                     alt="${client.image}"
-                    class="d-block m-auto"
+                    class="d-block m-auto client-image"
                   />
                   <h4>${client.name}</h4>
                 </div>
