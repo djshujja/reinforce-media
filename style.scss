@@ -1,3 +1,4 @@
+$colors: red, orange, yellow, green, blue, purple;
 $yellow_fade: #e5b756;
 $yellow: #ffca1d;
 $reddish: #cf404d;
@@ -110,7 +111,8 @@ $video_height: 700px;
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: $secondary; /* Black */
+  // background-color: $secondary; /* Black */
+  background-color: #3e3e3e;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
 
@@ -121,6 +123,16 @@ $video_height: 700px;
     margin-top: 50%;
     text-align: center;
     font-size: 1.5rem;
+    .brand-wrapper {
+      width: 100%;
+      display: block;
+      .brand-logo {
+        width: 120%;
+        margin: 0;
+        margin-bottom: -60px;
+        margin-left: -10px;
+      }
+    }
     .brand {
       letter-spacing: 0.3em;
       font-size: 1.6rem;
@@ -140,9 +152,10 @@ $video_height: 700px;
 
     .selected,
     a:hover {
-      font-size: 1.3rem;
+      font-size: 1.7rem;
       font-weight: 600;
-      color: $primary !important;
+      color: #fff !important;
+      // color: lighten(nth($colors, random(length($colors))), 20%);
     }
     .brand:hover {
       span {

@@ -94,8 +94,7 @@
   top: 0;
   /* Stay at the top */
   left: 0;
-  background-color: #2d3e4f;
-  /* Black */
+  background-color: #3e3e3e;
   overflow-x: hidden;
   /* Disable horizontal scroll */
   padding-top: 20px;
@@ -106,6 +105,16 @@
   margin-top: 50%;
   text-align: center;
   font-size: 1.5rem;
+}
+.sidenav .sidenav-inner .brand-wrapper {
+  width: 100%;
+  display: block;
+}
+.sidenav .sidenav-inner .brand-wrapper .brand-logo {
+  width: 120%;
+  margin: 0;
+  margin-bottom: -60px;
+  margin-left: -10px;
 }
 .sidenav .sidenav-inner .brand {
   letter-spacing: 0.3em;
@@ -125,9 +134,9 @@
 }
 .sidenav .sidenav-inner .selected,
 .sidenav .sidenav-inner a:hover {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   font-weight: 600;
-  color: #cf404d !important;
+  color: #fff !important;
 }
 .sidenav .sidenav-inner .brand:hover span {
   color: #fff !important;
