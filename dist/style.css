@@ -10,6 +10,11 @@
   background-color: #2d3e4f !important;
 }
 
+.bg_gradiant {
+  background: #cf404d !important;
+  background: linear-gradient(270deg, #cf404d 0%, #3e3e3e 100%, #00d4ff 100%) !important;
+}
+
 .color_secondary {
   color: #f9dfdc !important;
 }
@@ -310,7 +315,7 @@
   padding: 50px 25px;
   border: 1px solid transparent;
   transition: all linear 150ms;
-  min-height: 500px;
+  height: 400px;
 }
 .promises-wrapper .cards .promise-card h3 {
   font-family: "Decalotype";
@@ -357,7 +362,6 @@
   font-weight: bold;
   font-size: 1.5rem;
   padding: 100px 0px;
-  background-color: #101522;
   width: 100%;
 }
 .milestones-inner div {
@@ -366,7 +370,7 @@
 .milestones-inner .milestone-card {
   border-radius: 4px;
   text-align: center;
-  color: #101522;
+  color: #3e3e3e;
   background-color: #fff;
   margin-right: 5px;
   padding: 30px;
@@ -380,7 +384,7 @@
 }
 .milestones-inner .milestone-card:nth-child(2):hover {
   border: 1px solid transparent;
-  color: #101522;
+  color: #3e3e3e;
   background-color: #fff;
 }
 .milestones-inner .milestone-card:hover {
@@ -554,9 +558,82 @@
   margin-bottom: 2rem;
 }
 
+#connect .connect-wrapper {
+  background: #cf404d;
+  background: linear-gradient(270deg, #cf404d 0%, #3e3e3e 100%, #00d4ff 100%);
+  padding: 100px;
+  padding-top: 50px !important;
+  color: #fff;
+}
+#connect .connect-wrapper h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+  font-family: "quicksand";
+  text-transform: uppercase;
+}
+#connect .connect-wrapper .addresses .icon {
+  font-size: 1.7rem;
+  padding: 10px 0px;
+}
+#connect .connect-wrapper hr {
+  margin: auto;
+  max-width: 25%;
+  margin: 20px auto;
+}
+#connect .connect-wrapper .contact-form {
+  width: 60%;
+  margin: auto;
+}
+#connect .connect-wrapper .contact-form input,
+#connect .connect-wrapper .contact-form textarea {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  outline: none;
+  background-color: transparent !important;
+  border: 1px solid #ccc;
+  color: #fff;
+}
+#connect .connect-wrapper .contact-form ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+#connect .connect-wrapper .contact-form :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
+}
+#connect .connect-wrapper .contact-form ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #fff;
+}
+#connect .connect-wrapper .contact-form input:hover,
+#connect .connect-wrapper .contact-form textarea:hover,
+#connect .connect-wrapper .contact-form input:focus,
+#connect .connect-wrapper .contact-form textarea:focus {
+  border-color: #fff;
+}
+#connect .connect-wrapper .contact-form .send-button {
+  background: #fff;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 25px;
+  font-family: "quicksand";
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#connect .connect-wrapper .contact-form .send-button:hover {
+  background: #3e3e3e;
+  color: #fff;
+}
+
 footer {
   z-index: 200;
-  background-color: #101522;
+  background-color: #3e3e3e;
   color: #fff;
   padding: 15px 0;
 }

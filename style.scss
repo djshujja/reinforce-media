@@ -9,7 +9,7 @@ $secondary: $slate_gray;
 $primary: $reddish;
 $dark: #000000;
 $light: #fff;
-$accent: #101522;
+$accent: #3e3e3e;
 $accent_light: #222636;
 $off_white: #fafafa;
 
@@ -26,6 +26,16 @@ $video_height: 700px;
 
 .bg_secondary {
   background-color: $secondary !important;
+}
+
+.bg_gradiant {
+  background: rgb(207, 64, 77) !important;
+  background: linear-gradient(
+    270deg,
+    rgba(207, 64, 77, 1) 0%,
+    rgba(62, 62, 62, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  ) !important;
 }
 
 .color_secondary {
@@ -112,7 +122,7 @@ $video_height: 700px;
   top: 0; /* Stay at the top */
   left: 0;
   // background-color: $secondary; /* Black */
-  background-color: #3e3e3e;
+  background-color: $accent;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
 
@@ -155,7 +165,6 @@ $video_height: 700px;
       font-size: 1.7rem;
       font-weight: 600;
       color: #fff !important;
-      // color: lighten(nth($colors, random(length($colors))), 20%);
     }
     .brand:hover {
       span {
@@ -372,7 +381,7 @@ $video_height: 700px;
       padding: 50px 25px;
       border: 1px solid transparent;
       transition: all linear 150ms;
-      min-height: 500px;
+      height: 400px;
     }
     .promise-card:hover,
     .icon:hover {
@@ -422,7 +431,7 @@ $video_height: 700px;
   font-weight: bold;
   font-size: 1.5rem;
   padding: 100px 0px;
-  background-color: $accent;
+  // background-color: $accent;
   width: 100%;
   div {
     // font-family: "quicksand";
@@ -638,6 +647,96 @@ $video_height: 700px;
       // font-weight: bold;
       font-size: 1.4rem;
       margin-bottom: 2rem;
+    }
+  }
+}
+
+// Connect
+
+#connect {
+  .connect-wrapper {
+    background: rgb(207, 64, 77);
+    background: linear-gradient(
+      270deg,
+      rgba(207, 64, 77, 1) 0%,
+      rgba(62, 62, 62, 1) 100%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    padding: 100px;
+    padding-top: 50px !important;
+    color: #fff;
+    h2 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      padding-bottom: 20px;
+      font-family: "quicksand";
+      text-transform: uppercase;
+    }
+
+    .addresses {
+      .icon {
+        font-size: 1.7rem;
+        padding: 10px 0px;
+      }
+    }
+
+    hr {
+      margin: auto;
+      max-width: 25%;
+      margin: 20px auto;
+    }
+    .contact-form {
+      width: 60%;
+      margin: auto;
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px 20px;
+        margin: 10px 0px;
+        border-radius: 5px;
+        outline: none;
+        background-color: transparent !important;
+        // background-color: $accent;
+        border: 1px solid #ccc;
+        color: #fff;
+      }
+      ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #fff;
+        opacity: 1; /* Firefox */
+      }
+
+      :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #fff;
+      }
+
+      ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #fff;
+      }
+
+      input:hover,
+      textarea:hover,
+      input:focus,
+      textarea:focus {
+        border-color: #fff;
+      }
+      .send-button {
+        background: #fff;
+        width: 100%;
+        padding: 10px 0;
+        border-radius: 25px;
+        font-family: "quicksand";
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .send-button:hover {
+        background: $accent;
+        color: #fff;
+      }
     }
   }
 }
