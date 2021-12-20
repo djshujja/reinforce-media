@@ -16,8 +16,36 @@
   background: linear-gradient(270deg, #cf404d 0%, #3e3e3e 100%, #00d4ff 100%) !important;
 }
 
+.bg_red {
+  background-color: #cf404d !important;
+}
+
+.bg_green {
+  background-color: #58cd36 !important;
+}
+
+.bg_purple {
+  background-color: #aa00ff !important;
+}
+
+.bg_yellow {
+  background-color: #ffff00 !important;
+}
+
+.bg_blue {
+  background-color: #add8e6 !important;
+}
+
+.bg_pink {
+  background-color: #ffc0cb !important;
+}
+
 .color_secondary {
   color: #f9dfdc !important;
+}
+
+.color_dark {
+  color: #000000 !important;
 }
 
 @font-face {
@@ -232,7 +260,7 @@
 }
 
 .who-we-are {
-  background: rgba(0, 0, 0, 0.8);
+  padding-bottom: 50px;
 }
 
 .who-we-are .video-container {
@@ -286,6 +314,56 @@
   font-weight: 500;
   font-family: "Decalotype";
   font-size: 1.4rem;
+}
+
+.who-we-are .skill-card {
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px auto;
+  font-weight: 500;
+  font-family: "Pasajero";
+  font-size: 1.1rem;
+  background-color: #222636;
+  padding-top: 25px;
+}
+
+.who-we-are .skill-card p {
+  padding: 0.5rem;
+}
+
+.who-we-are .skill-card .icon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 3rem;
+}
+
+.who-we-are .skill-card:hover {
+  background-color: #ccc;
+  -webkit-transition: all ease 100ms;
+  transition: all ease 100ms;
+  cursor: pointer;
+  color: #000000;
 }
 
 .services {
