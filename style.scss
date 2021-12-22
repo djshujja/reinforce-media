@@ -245,13 +245,11 @@ $video_height: 700px;
     font-size: 5em;
     letter-spacing: 0.5em;
   }
+
   .ml2 .text-wrapper,
   .ml3 .text-wrapper {
     position: relative;
     display: inline-block;
-    // padding-top: 0.2em;
-    // padding-right: 0.05em;
-    // padding-bottom: 0.1em;
     overflow: hidden;
   }
   .ml2 .letter,
@@ -323,7 +321,7 @@ $video_height: 700px;
   }
 
   .skill-card {
-    border-radius: 5px;
+    border-radius: 10px;
     color: #fff;
     text-align: center;
     width: 200px;
@@ -502,6 +500,16 @@ $video_height: 700px;
     // font-weight: bold;
     font-family: "Uni";
   }
+
+  .milestone-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+    padding: 0 50px;
+  }
+
   .milestone-card {
     border-radius: 4px;
     text-align: center;
@@ -853,6 +861,86 @@ html {
 @media only screen and (max-width: 768px) {
   .navbar {
     background-color: #1c2331;
+  }
+  .sidenav {
+    display: none;
+  }
+  .ml2,
+  .ml3 {
+    font-size: 2.5rem !important;
+  }
+  .ml3 {
+    font-size: 1.7rem !important;
+  }
+
+  .milestone-container {
+    grid-template-columns: auto !important;
+  }
+
+  .unknown-section-inner {
+    padding: 50px 25px;
+    border-radius: 5px;
+  }
+
+  .promises-wrapper {
+    .text-wrapper {
+      padding: 25px;
+      text-align: justify;
+    }
+    .cards {
+      padding: 10px;
+      .promise-card {
+        width: 100% !important;
+        margin: 50px 0;
+        height: auto;
+      }
+      .promise-card:first-child {
+        margin-top: 0px;
+      }
+    }
+  }
+  #connect {
+    .connect-wrapper {
+      padding: 5px;
+      h2 {
+        font-size: 1.7rem;
+      }
+      .contact-form {
+        width: 90%;
+        padding-bottom: 50px;
+      }
+    }
+  }
+  .who-we-are {
+    .caption {
+      max-width: 100% !important;
+      h1 {
+        font-size: 3.2rem !important;
+      }
+      p {
+        text-align: justify !important;
+      }
+      // display: none;
+    }
+  }
+  .facebook-wrapper {
+    // .facebook-row {
+    //   // flex-flow: column-reverse;
+    // }
+    .facebook-intro {
+      font-family: "quicksand";
+      font-weight: bold;
+      font-size: 2.3rem;
+    }
+
+    .facebook-lead {
+      font-size: 1.5rem;
+    }
+  }
+  footer {
+    .socials {
+      text-align: center;
+    }
   }
 }
 

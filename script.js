@@ -1,5 +1,23 @@
 console.log("I'm connected! c:");
 
+var $window = $(window),
+  $main = $("div.main");
+
+if ($window.width() <= 786) {
+  $main.removeClass("col-10");
+  $main.addClass("col-12");
+}
+
+$(window).on("resize", function () {
+  if ($window.width() <= 786) {
+    $main.removeClass("col-10");
+    $main.addClass("col-12");
+  } else {
+    $main.addClass("col-10");
+    $main.removeClass("col-12");
+  }
+});
+
 // Our cleints carousel
 $(".owl-carousel").owlCarousel({
   autoplay: true,

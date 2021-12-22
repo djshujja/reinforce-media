@@ -317,7 +317,7 @@
 }
 
 .who-we-are .skill-card {
-  border-radius: 5px;
+  border-radius: 10px;
   color: #fff;
   text-align: center;
   width: 200px;
@@ -508,6 +508,20 @@
 
 .milestones-inner div {
   font-family: "Uni";
+}
+
+.milestones-inner .milestone-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 2fr 2fr;
+      grid-template-columns: 2fr 2fr 2fr;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+  padding: 0 50px;
 }
 
 .milestones-inner .milestone-card {
@@ -914,6 +928,69 @@ html {
 @media only screen and (max-width: 768px) {
   .navbar {
     background-color: #1c2331;
+  }
+  .sidenav {
+    display: none;
+  }
+  .ml2,
+  .ml3 {
+    font-size: 2.5rem !important;
+  }
+  .ml3 {
+    font-size: 1.7rem !important;
+  }
+  .milestone-container {
+    -ms-grid-columns: auto !important;
+        grid-template-columns: auto !important;
+  }
+  .unknown-section-inner {
+    padding: 50px 25px;
+    border-radius: 5px;
+  }
+  .promises-wrapper .text-wrapper {
+    padding: 25px;
+    text-align: justify;
+  }
+  .promises-wrapper .cards {
+    padding: 10px;
+  }
+  .promises-wrapper .cards .promise-card {
+    width: 100% !important;
+    margin: 50px 0;
+    height: auto;
+  }
+  .promises-wrapper .cards .promise-card:first-child {
+    margin-top: 0px;
+  }
+  #connect .connect-wrapper {
+    padding: 5px;
+  }
+  #connect .connect-wrapper h2 {
+    font-size: 1.7rem;
+  }
+  #connect .connect-wrapper .contact-form {
+    width: 90%;
+    padding-bottom: 50px;
+  }
+  .who-we-are .caption {
+    max-width: 100% !important;
+  }
+  .who-we-are .caption h1 {
+    font-size: 3.2rem !important;
+  }
+  .who-we-are .caption p {
+    text-align: justify !important;
+  }
+  .facebook-wrapper .facebook-intro {
+    font-family: "quicksand";
+    font-weight: bold;
+    font-size: 2.3rem;
+  }
+  .facebook-wrapper .facebook-lead {
+    font-size: 1.5rem;
+  }
+  footer .socials {
+    text-align: center;
   }
 }
 
