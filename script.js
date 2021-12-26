@@ -124,13 +124,24 @@ textWrapper.innerHTML = textWrapper.textContent.replace(
 anime
   .timeline({ loop: true })
   .add({
+    targets: "div.line",
+    opacity: 0.7,
+    rotate: "1turn",
+    // translateY: -100,
+    // justifyContent: "space-around",
+    duration: 1000,
+    easing: "linear",
+    direction: "alternate",
+    autoplay: true,
+  })
+  .add({
     targets: ".ml3 .letters",
     scale: [4, 1],
     opacity: [0, 1],
     translateZ: 0,
     easing: "easeOutExpo",
     duration: 1500,
-    delay: (el, i) => 70 * i,
+    // delay: (el, i) => 70 * i,
   })
   .add({
     targets: ".ml3",
@@ -139,6 +150,30 @@ anime
     easing: "easeOutExpo",
     delay: 1000,
   });
+
+// anime.timeline({});
+
+// anime.timeline({ loop: true }).add({
+//   targets: ".line-green",
+//   opacity: 0,
+//   translateX: 0,
+//   // justifyContent: "space-around",
+//   duration: 3500,
+//   easing: "linear",
+//   direction: "alternate",
+// });
+
+// anime.timeline({ loop: true }).add({
+//   targets: ".line-red",
+//   opacity: 0,
+//   translateX: 0,
+//   rotate: "1turn",
+//   // justifyContent: "space-around",
+//   duration: 3500,
+//   easing: "linear",
+//   direction: "alternate",
+//   // transform: "skewX(-45deg)",
+// });
 
 const clients = [
   {

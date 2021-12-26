@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;1,700&family=Open+Sans:wght@300&display=swap");
 .color_primary {
   color: #cf404d !important;
 }
@@ -176,6 +177,7 @@
 }
 
 #intro {
+  overflow: hidden;
   background-image: url("./assets/intro-bg.jpg");
   min-height: 100vh;
   background-attachment: fixed;
@@ -191,6 +193,31 @@
 #intro .logo-wrapper {
   padding: 20rem 0px;
 }
+#intro .lines {
+  display: flex;
+  width: 100%;
+  margin: 5px 0px 8px 0px;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+#intro .line-green {
+  background: #7ed957 !important;
+}
+#intro .line-blue {
+  background: #5271ff !important;
+}
+#intro .line-red {
+  background: #ff1616 !important;
+}
+#intro .line {
+  width: 45px;
+  height: 8px;
+}
+#intro .right {
+  top: 0px;
+  right: 0px;
+}
 #intro h1,
 #intro h2 {
   color: #fff;
@@ -198,12 +225,12 @@
   font-weight: bold;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  font-family: "Visage" !important;
+  font-family: "Exo" !important;
 }
 #intro .ml2,
 #intro .ml3 {
   position: relative;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 5em;
   letter-spacing: 0.5em;
 }
@@ -221,10 +248,11 @@
 }
 #intro .ml3 {
   color: #cf404d !important;
-  font-family: "quicksand" !important;
-  font-weight: 100 !important;
+  font-family: "Exo" !important;
+  font-weight: 400 !important;
+  font-style: normal;
   letter-spacing: 0.2em;
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 .who-we-are {

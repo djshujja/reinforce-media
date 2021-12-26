@@ -67,6 +67,7 @@ $video_height: 700px;
 .color_dark {
   color: $dark !important;
 }
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;1,700&family=Open+Sans:wght@300&display=swap");
 
 @font-face {
   font-family: Decalotype;
@@ -201,6 +202,7 @@ $video_height: 700px;
 }
 
 #intro {
+  overflow: hidden;
   // Millionares
   // background-image: url("./assets/intro-bg.jpg");
 
@@ -227,6 +229,37 @@ $video_height: 700px;
   .logo-wrapper {
     padding: 20rem 0px;
   }
+  .lines {
+    display: flex;
+    width: 100%;
+    margin: 5px 0px 8px 0px;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+  }
+
+  .line-green {
+    background: #7ed957 !important;
+  }
+
+  .line-blue {
+    background: #5271ff !important;
+  }
+
+  .line-red {
+    background: #ff1616 !important;
+  }
+  .line {
+    width: 45px;
+    height: 8px;
+  }
+
+  .right {
+    top: 0px;
+    right: 0px;
+    // transform-origin: bottom right;
+    // transform: skewX(-45deg) !important;
+  }
   h1,
   h2 {
     color: $light;
@@ -235,13 +268,14 @@ $video_height: 700px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     // font-family: "Uni" !important;
-    font-family: "Visage" !important;
+    // font-family: "Visage" !important;
+    font-family: "Exo" !important;
   }
   // Animation
   .ml2,
   .ml3 {
     position: relative;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 5em;
     letter-spacing: 0.5em;
   }
@@ -261,10 +295,12 @@ $video_height: 700px;
 
   .ml3 {
     color: $primary !important;
-    font-family: "quicksand" !important;
-    font-weight: 100 !important;
+    // font-family: "quicksand" !important;
+    font-family: "Exo" !important;
+    font-weight: 400 !important;
+    font-style: normal;
     letter-spacing: 0.2em;
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 }
 
