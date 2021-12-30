@@ -147,14 +147,13 @@
                       <div class="icon-wrapper bg_purple">
                         <i class="fas fa-users"></i>
                       </div>
-                      <p>Social Media Management</p>
+                      <p>Creative & Skilled Team</p>
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  <!-- <div class="col-md-4">
                     <div class="skill-card">
                       <div class="icon-wrapper bg_pink">
                         <i class="fas fa-film color_dark"></i>
-                        <!-- <i class="fas fa-mobile-alt color_dark"></i> -->
                       </div>
                       <p>
                         Video <br />
@@ -177,7 +176,7 @@
                       </div>
                       <p>Website Development</p>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -579,11 +578,26 @@
                 </div>
                 <hr />
               </div>
-              <form class="contact-form">
-                <input type="text" required placeholder="Name" />
-                <input type="text" required placeholder="Email" />
-                <input type="text" required placeholder="Company" />
-                <textarea cols="80" rows="6" placeholder="Message"></textarea>
+              <form
+                class="contact-form"
+                if="contact-form"
+                action="https://formspree.io/f/mrgjbqre"
+                method="POST"
+              >
+                <input type="text" name="name" required placeholder="Name" />
+                <input type="text" name="email" required placeholder="Email" />
+                <input
+                  type="text"
+                  name="company"
+                  required
+                  placeholder="Company"
+                />
+                <textarea
+                  cols="80"
+                  rows="6"
+                  name="message"
+                  placeholder="Message"
+                ></textarea>
                 <button class="btn send-button">Send</button>
               </form>
             </div>
