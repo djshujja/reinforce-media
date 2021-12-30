@@ -1,30 +1,40 @@
 console.log("I'm connected! c:");
 
 // Form Ajax
+var form = document.getElementById("contact-form");
 
-// var form = document.getElementById("contact-form");
+async function handleSubmit(event) {
+  event.preventDefault();
+  var status = document.getElementById("contact-form-status");
+  // var name = document.getElementById("contact-name");
+  // var email = document.getElementById("contact-email");
+  // var company = document.getElementById("contact-company");
+  // var message = document.getElementById("contact-message");
 
-// async function handleSubmit(event) {
-//   event.preventDefault();
-//   var status = document.getElementById("my-form-status");
-
-//   var data = new FormData(event.target);
-//   fetch(event.target.action, {
-//     method: form.method,
-//     body: data,
-//     headers: {
-//       Accept: "application/json",
-//     },
-//   })
-//     .then((response) => {
-//       status.innerHTML = "Thanks for your submission!";
-//       form.reset();
-//     })
-//     .catch((error) => {
-//       status.innerHTML = "Oops! There was a problem submitting your form";
-//     });
-// }
-// form.addEventListener("submit", handleSubmit);
+  var data = new FormData(event.target);
+  fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+      Accept: "application/json",
+    },
+  })
+    .then((response) => {
+      // alert("Form has been submited! Thank you!");
+      // status.innerHTML =
+      //   "Thank you, we'll get back to you as soon as possible!";
+      // alert();
+      // $('#contact-form-status')
+      $("#contact-form-status").fadeTo("slow", 1, function () {
+        // Animation complete.
+      });
+      form.reset();
+    })
+    .catch((error) => {
+      // status.innerHTML = "Oops! There was a problem submitting your form";
+    });
+}
+form.addEventListener("submit", handleSubmit);
 
 var $window = $(window),
   $main = $("div.main");
