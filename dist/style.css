@@ -455,9 +455,6 @@
   padding: 100px 0px;
   width: 100%;
 }
-.milestones-inner div {
-  font-family: "Uni";
-}
 .milestones-inner .milestone-container {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
@@ -471,10 +468,26 @@
   text-align: center;
   color: #3e3e3e;
   background-color: #fff;
+  background-size: cover;
   margin-right: 5px;
   padding: 30px;
   border: 1px solid transparent;
   transition: all 250ms ease-in-out;
+  height: 450px;
+}
+.milestones-inner .milestone-card p {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  font-size: 2rem;
+}
+.milestones-inner .milestone-card p .number {
+  font-size: 10rem;
+  background-image: url("./assets/milestone-bg.png");
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .milestones-inner .milestone-card:nth-child(2) {
   border: 1px solid #fff;

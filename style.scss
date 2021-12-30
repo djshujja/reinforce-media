@@ -531,11 +531,6 @@ $video_height: 700px;
   padding: 100px 0px;
   // background-color: $accent;
   width: 100%;
-  div {
-    // font-family: "quicksand";
-    // font-weight: bold;
-    font-family: "Uni";
-  }
 
   .milestone-container {
     display: grid;
@@ -550,11 +545,30 @@ $video_height: 700px;
     border-radius: 4px;
     text-align: center;
     color: $accent;
+    // background: url("./assets/milestone-bg.jpg");
     background-color: $light;
+    background-size: cover;
     margin-right: 5px;
     padding: 30px;
     border: 1px solid transparent;
     transition: all 250ms ease-in-out;
+    height: 450px;
+    p {
+      // margin-top: 200px;
+      // font-size: 120px;
+      text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+      -webkit-font-smoothing: antialiased;
+      .number {
+        font-size: 10rem;
+        background-image: url("./assets/milestone-bg.png");
+        background-size: cover;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      font-size: 2rem;
+    }
   }
   .milestone-card:nth-child(2) {
     border: 1px solid $light;
