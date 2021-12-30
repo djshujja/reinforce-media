@@ -38,6 +38,9 @@ $video_height: 700px;
   ) !important;
 }
 
+.bg_transparent {
+  background-color: transparent !important;
+}
 .bg_red {
   background-color: $reddish !important;
 }
@@ -67,6 +70,11 @@ $video_height: 700px;
 .color_dark {
   color: $dark !important;
 }
+
+.color_light {
+  color: $light !important;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;1,700&family=Open+Sans:wght@300&display=swap");
 
 @font-face {
@@ -137,6 +145,21 @@ $video_height: 700px;
   font-family: TCCEB;
   src: url("./assets/fonts/TCCEB.ttf");
   font-weight: 700;
+}
+
+.header {
+  padding: 7px 0;
+  font-family: "quicksand";
+  display: flex;
+  background-color: $accent;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
 }
 
 /* The sidebar menu */

@@ -17,6 +17,10 @@
   background: linear-gradient(270deg, #cf404d 0%, #3e3e3e 100%, #00d4ff 100%) !important;
 }
 
+.bg_transparent {
+  background-color: transparent !important;
+}
+
 .bg_red {
   background-color: #cf404d !important;
 }
@@ -47,6 +51,10 @@
 
 .color_dark {
   color: #000000 !important;
+}
+
+.color_light {
+  color: #fff !important;
 }
 
 @font-face {
@@ -127,6 +135,27 @@
   font-family: TCCEB;
   src: url("./assets/fonts/TCCEB.ttf");
   font-weight: 700;
+}
+
+.header {
+  padding: 7px 0;
+  font-family: "quicksand";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #3e3e3e;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
 }
 
 /* The sidebar menu */
