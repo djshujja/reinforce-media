@@ -74,6 +74,9 @@ $video_height: 700px;
 .color_light {
   color: $light !important;
 }
+.color_dark {
+  color: $dark !important;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;1,700&family=Open+Sans:wght@300&display=swap");
 
@@ -537,11 +540,11 @@ $video_height: 700px;
   .facebook-intro {
     font-family: "quicksand";
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
 
   .facebook-lead {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 

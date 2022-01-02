@@ -56,6 +56,10 @@
   color: #fff !important;
 }
 
+.color_dark {
+  color: #000000 !important;
+}
+
 @font-face {
   font-family: Decalotype;
   src: url("./assets/fonts/decalotype/Decalotype-Regular.ttf");
@@ -462,10 +466,10 @@
 .facebook-wrapper .facebook-intro {
   font-family: "quicksand";
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 .facebook-wrapper .facebook-lead {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .milestones-inner {
