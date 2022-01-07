@@ -509,7 +509,7 @@
   font-size: 2rem;
 }
 .milestones-inner .milestone-card p .number {
-  font-size: 10rem;
+  font-size: 8rem;
   background-image: url("./assets/milestone-bg.png");
   background-size: cover;
   -webkit-background-clip: text;
